@@ -1,0 +1,42 @@
+version: 0.1
+
+project:
+  type: default
+  render: 
+    - index.qmd
+    - supplements/*.qmd
+  output-dir: _manuscript
+  execute-dir: project
+
+execute:
+  echo: false
+  freeze: false
+  cache: false
+  warning: false
+  error: false
+
+crossref:
+  custom:
+    - kind: float
+      key: suppfig
+      latex-env: suppfig
+      reference-prefix: Figure S
+      space-before-numbering: false
+      latex-list-of-description: Supplementary Figure
+    - kind: float
+      key: supptbl
+      latex-env: supptbl
+      reference-prefix: Table S
+      space-before-numbering: false
+      latex-list-of-description: Supplementary Table
+      caption-location: top
+
+# References
+bibliography: references.bib
+link-citations: true
+
+format:
+  # Render all files as PDF. Only the main text will be rendered as docx.
+  pdf: default
+
+fig-dpi: 600

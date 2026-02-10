@@ -1,0 +1,18 @@
+stages:
+  - manual
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image:
+    name: ghcr.io/astral-sh/uv:python3.12-bookworm
+  script:
+    - apt-get update && apt-get install zip librsvg2-bin -y
+    - uv run quarto install tinytex
+    - uv run quarto render --use-freezer
+  artifacts:
+    paths:
+      - _manuscript/
+    expire_in: 1 week

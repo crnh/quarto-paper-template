@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.jupyter_cache/
+
+# Virtual environments
+.venv
+
+# Quarto
+.quarto/
+_manuscript/
+_manuscript*/
+site_libs/
+
+# Quarto
+.quarto/
+
+# Editors
+.vscode/
+
+# Temporary files
+~$*.docx
+**/*.quarto_ipynb
+
+/.quarto/

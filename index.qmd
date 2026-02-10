@@ -1,0 +1,43 @@
+---
+title: "Quarto Paper Template"
+subtitle: "A subtitle, if required by the journal"
+authors:
+  - name: Corné Haasjes, MSc
+    orcid: 0000-0003-0187-4116
+    email: me@example.com
+    affiliation:
+      - ref: oog
+      - ref: radi
+      - ref: rt
+    corresponding: true
+
+affiliations:
+  - id: oog
+    name: Leiden University Medical Center
+    department: Department of Ophthalmology
+    city: Leiden
+    country: The Netherlands
+  - id: radi
+    name: Leiden University Medical Center
+    department: Department of Radiology
+    city: Leiden
+    country: The Netherlands
+  - id: rt
+    name: Leiden University Medical Center
+    department: Department of Radiation Oncology
+    city: Leiden
+    country: The Netherlands
+
+keywords: []
+
+format:
+  docx:
+    filters:
+    - _filters/authors-block/authors-block.lua
+    reference-doc: _templates/custom-reference-doc.docx
+    fig-format: svg
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document [@knuth84]. To learn more about Quarto see <https://quarto.org>.

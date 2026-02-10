@@ -1,0 +1,13 @@
+---
+title: Supplement 1
+---
+
+```{python}
+#| label: suppfig-one
+#| fig-cap: A supplementary figure.
+import matplotlib.pyplot as plt
+
+plt.plot(range(10), label="up")
+plt.plot(range(10, 0, -1), label="down")
+plt.legend()
+```

@@ -1,0 +1,25 @@
+[project]
+name = "quarto-paper-template"
+version = "0.1.0"
+description = "Quarto paper template"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "jupyter-cache>=1.0.1",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.6",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.0",
+    "quarto-cli>=1.7.32",
+]
+
+[tool.poe.tasks]
+build-docx = [
+    { cmd = "quarto render --to docx -o manuscript.docx" },
+    { cmd = "'C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE' \"./_manuscript/manuscript.docx\"" },
+]
+build-pdf = "quarto render --to pdf"
+
+[tool.ruff]
+line-length = 120
