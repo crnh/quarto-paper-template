@@ -7,12 +7,12 @@ This paper does intentionally not use Quarto's manuscript format, because that f
 
 1. Create a new Quarto project with this template:
 
-  ```bash
-  quarto use template crnh/quarto-paper-template
-  ```
-2. Change the project name and description in `pyproject.toml` and update the author information in `index.qmd`.
-3. Copy this repository's `.gitignore` file to your project to ignore Quarto's cache and temporary files. Unfortunately, Quarto does not copy the `.gitignore` file from the template, so you have to do this manually.
-4. Start writing your paper in `index.qmd`. Good luck!
+   ```bash
+   quarto use template crnh/quarto-paper-template
+   ```
+3. Change the project name and description in `pyproject.toml` and update the author information in `index.qmd`.
+4. Copy this repository's `.gitignore` file to your project to ignore Quarto's cache and temporary files. Unfortunately, Quarto does not copy the `.gitignore` file from the template, so you have to do this manually.
+5. Start writing your paper in `index.qmd`. Good luck!
 
 ## Features
 
